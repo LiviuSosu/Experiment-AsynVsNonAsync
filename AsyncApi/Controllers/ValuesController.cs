@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using DAL;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AsyncApi.Controllers
 {
@@ -11,11 +13,14 @@ namespace AsyncApi.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<ActionResult<IEnumerable<string>>> Get()
         {
-            Context context = new Context();
-            var customers = context.Customers.ToList();
-            return new string[] { "value10.2.3", "value2" };
+            //Context context = new Context();
+            //var customers = await(from b in context.Customers
+            //                      orderby b.CustomerName
+            //                      select b).ToListAsync();
+
+            return new string[] { "async 3.1", "value2" };
         }
 
         // GET api/values/5

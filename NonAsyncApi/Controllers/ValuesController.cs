@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DAL;
 using Microsoft.AspNetCore.Mvc;
 
 namespace NonAsyncApi.Controllers
@@ -15,9 +14,7 @@ namespace NonAsyncApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            Context context = new Context();
-            var customers = context.Customers.ToList();
-            return new string[] { "value1", "value2" };
+            return new string[] { "non async 3.1", "value2" };
         }
 
         // GET api/values/5
