@@ -13,6 +13,8 @@ namespace AsyncApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            Context context = new Context();
+            var customers = context.Customers.ToList();
             return new string[] { "value10.2.3", "value2" };
         }
 
