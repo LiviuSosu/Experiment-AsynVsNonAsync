@@ -1,5 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Linq;
+using DAL;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AsyncApi.Controllers
@@ -12,7 +13,9 @@ namespace AsyncApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            Context context = new Context();
+            var customers = context.Customers.ToList();
+            return new string[] { "value10.2.3", "value2" };
         }
 
         // GET api/values/5
