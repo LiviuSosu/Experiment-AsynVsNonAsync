@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL.Migrations", "DAL.Migrations\DAL.Migrations.csproj", "{90622351-4E80-427F-A333-FC155EF6C54D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NonAsyncApi", "NonAsyncApi\NonAsyncApi.csproj", "{C1B15CC8-D4B5-4678-96F4-552A7C74536D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NonAsyncApi", "NonAsyncApi\NonAsyncApi.csproj", "{C1B15CC8-D4B5-4678-96F4-552A7C74536D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seeder", "Seeder\Seeder.csproj", "{32AF9ABC-F2B8-47C0-AB27-72B9D9203ED9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C1B15CC8-D4B5-4678-96F4-552A7C74536D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1B15CC8-D4B5-4678-96F4-552A7C74536D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1B15CC8-D4B5-4678-96F4-552A7C74536D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32AF9ABC-F2B8-47C0-AB27-72B9D9203ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32AF9ABC-F2B8-47C0-AB27-72B9D9203ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32AF9ABC-F2B8-47C0-AB27-72B9D9203ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32AF9ABC-F2B8-47C0-AB27-72B9D9203ED9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
